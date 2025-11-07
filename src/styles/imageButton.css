@@ -1,0 +1,23 @@
+.image-button {
+  border: none;
+  padding: 0;
+  background: none;
+  cursor: pointer;
+  height: 25rem;
+  width: 17rem;
+  border-radius: 0;
+  font-size: 1.5rem;
+}
+
+
+
+/* responsive sizes */
+@media (max-width: 768px) {
+  .image-button { height: 7rem; width: 100%; }
+
+}
+
+@media (max-width: 480px) {
+  .image-button { height: 7rem; width: 100%; }
+
+}

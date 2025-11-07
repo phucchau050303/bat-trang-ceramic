@@ -1,0 +1,101 @@
+.review-card {
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto;
+  background: #fff;
+  color: #222;
+  border-radius: 4px;
+  padding: 28px 20px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: transform 200ms ease, box-shadow 200ms ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* hover lift */
+.review-card:hover,
+.review-card:focus-within {
+  transform: translateY(-8px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.18);
+  cursor: pointer;
+}
+
+/* header */
+.review-avatar {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 12px;
+  border: 4px solid rgba(0,0,0,0.05);
+}
+.review-stars {
+  text-align: center;
+  color: #ffcc33;
+  margin-bottom: 12px;
+  font-size: 1.05rem;
+}
+
+/* short snippet visible by default */
+.review-title {
+  text-align: center;
+  margin: 6px 0;
+  font-size: 1.25rem;
+}
+.review-excerpt {
+  text-align: center;
+  color: rgba(0,0,0,0.8);
+  margin-bottom: 0.75rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* hidden full review panel that expands on hover */
+.review-full {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 320ms ease, opacity 320ms ease;
+  text-align: left;
+  margin-top: 12px;
+}
+
+/* reveal full text on hover/focus */
+.review-card:hover .review-full,
+.review-card:focus-within .review-full {
+  max-height: 500px; /* big enough for full review */
+  opacity: 1;
+}
+
+/* optionally hide excerpt when revealing */
+.review-card:hover .review-excerpt,
+.review-card:focus-within .review-excerpt {
+  opacity: 0.25;
+}
+
+/* full text & meta */
+.review-full-text {
+  line-height: 1.5;
+  color: inherit;
+  margin-bottom: 12px;
+}
+.review-meta {
+  font-size: 0.85rem;
+  opacity: 0.9;
+  color: inherit;
+  text-align: left;
+}
+
+/* responsive grid container you can use in App.jsx */
+.reviews-row {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* allow dark card background */
+.review-card[style*="background-color"] { color: #fff; }

@@ -1,0 +1,62 @@
+.carousel-wrapper { position: relative; }
+
+/* reuse existing image rules */
+.carousel-img {
+  height: 43rem;
+  object-fit: cover;
+  width: 100%;
+  transition: height 0.3s;
+}
+
+/* static center overlay (positioned inside wrapper) */
+.carousel-caption-static {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  z-index: 5;
+  width: 90%;
+  max-width: 900px;
+  pointer-events: none; /* allows clicking through except the button */
+  text-shadow: 0 6px 18px rgba(0,0,0,0.6);
+}
+
+.carousel-caption-static h1 {
+  font-size: 3.5rem;
+  margin: 0 0 0.6rem;
+  font-weight: 700;
+}
+
+.carousel-subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 1.25rem;
+  font-weight: 600;
+}
+
+/* CTA button - enable pointer events */
+.hero-btn {
+  pointer-events: auto;
+  display: inline-block;
+  background: #6f3f2b;
+  color: #fff;
+  padding: 0.65rem 1.2rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+/* responsive sizes */
+@media (max-width: 768px) {
+  .carousel-img { height: 33rem; }
+  .carousel-caption-static h1 { font-size: 2.5rem; }
+  .carousel-subtitle { font-size: 1rem; }
+}
+
+@media (max-width: 480px) {
+  .carousel-img { height: 23rem; }
+  .carousel-caption-static h1 { font-size: 1.6rem; }
+  .carousel-subtitle { font-size: 0.9rem; }
+}

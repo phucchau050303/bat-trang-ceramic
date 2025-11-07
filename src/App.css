@@ -1,0 +1,101 @@
+#root {
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+.background-cta {
+  position: relative;
+  color: #fff;
+  background-image: 'url("/backgrounds/bg1.jpg")';
+}
+
+.background-cta-image {
+  height: 43rem;
+  object-fit: cover;
+  width: 100%;
+  transition: height 0.3s;
+}
+
+.background-cta-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  z-index: 5;
+  width: 90%;
+  max-width: 900px;
+  pointer-events: none; /* allows clicking through except the button */
+  text-shadow: 0 6px 18px rgba(0,0,0,0.6);
+}
+
+.background-cta-caption h1 {
+  font-size: 3.5rem;
+  margin: 0 0 0.6rem;
+  font-weight: 700;
+}
+
+.background-cta-subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 1.25rem;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .background-cta-image { height: 33rem; }
+  .background-cta-caption h1 { font-size: 2.5rem; }
+  .background-cta-subtitle { font-size: 1rem; }
+}
+
+@media (max-width: 480px) {
+  .background-cta-image { height: 23rem; }
+  .background-cta-caption h1 { font-size: 1.6rem; }
+  .background-cta-subtitle { font-size: 0.9rem; }
+}
+
+.cta-btn {
+  background: #6f3f2b;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 0.65rem 1.2rem;
+  pointer-events: auto;
+  font-weight: 600;
+}

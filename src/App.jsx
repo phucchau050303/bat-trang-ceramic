@@ -26,13 +26,13 @@ function App() {
         <div class = "container mt-2 p-5">
           <div class = "row mt-5 align-items-center justify-content-center ">
             <div class = "col-lg-4 mt-4 mb-4">
-              <ImageButton buttonName = "Shop Now" backgroundImageLink = "/ceramic4.jpg" />
+              <ImageButton buttonName = "Best Sellers" backgroundImageLink = "/ceramic4.jpg" />
             </div>
             <div class = "col-lg-4 mt-4 mb-4">
-              <ImageButton buttonName = "Shop Now" backgroundImageLink = "/ceramic4.jpg" />
+              <ImageButton buttonName = "Shop Now" backgroundImageLink = "/ceramic9.jpg" />
             </div>
             <div class = "col-lg-4 mt-4 mb-4">
-              <ImageButton buttonName = "Shop Now" backgroundImageLink = "/ceramic4.jpg" />
+              <ImageButton buttonName = "Trending" backgroundImageLink = "/ceramic10.jpg" />
             </div>
           </div>
 
@@ -51,12 +51,13 @@ function App() {
 
           <div className = "row mt-5 mb-5 p-5" style={{fontSize: '1.2rem'}}>
             <div className = "col-lg-6 col-12 d-flex flex-column justify-content-center order-lg-0 order-1">
-              <h2 style={{fontSize: "3rem",}}> HAND MADE CERAMIC </h2>
-              <p> Our products are hand-crafted by the most skillful pottery makers with years of 
-                experience, ensuring each product has a unique touch</p>
+              <h2 style={{fontSize: "3rem",}}> TOP NOTCH QUALITY </h2>
+              <p> Well known by people as the oldest pottery village, we has been making and delivering ceramic
+                products of the highest quality for centuries. Our products are durable and safe for everyday use.
+              </p>
             </div>            
             <div className = "col-lg-6 col-12 order-lg-1 order-0">
-              <img src='/ceramic5.png' className = "image-intro"></img>
+              <img src='/ceramic11.jpg' className = "image-intro"></img>
             </div>
           </div>    
 
